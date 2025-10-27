@@ -20,7 +20,7 @@ pub async fn create_lease(
 
     let mut retry_count = 0;
     const MAX_RETRIES: u32 = 20;
-    const RETRY_DELAY: Duration = Duration::from_millis(500);
+    const RETRY_DELAY: Duration = Duration::from_millis(450);
     const RETRY_JITTER: u64 = 100;
     let mut last_retry_time = std::time::Instant::now();
 
